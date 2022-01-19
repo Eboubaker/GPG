@@ -24,6 +24,7 @@ uid                          Eboubaker Bekkouche (My Laptop GPG Key) <eboubakkar
 ssb   4096R/94E12541DEA8E355 2022-01-19
 ```
 ## Personal GPG Key
+encrypt stuff with this key.
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG v2
