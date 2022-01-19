@@ -19,7 +19,6 @@ ssb   rsa4096/A471F373C23F4DD6 2022-01-19 [E] [expires: 2022-07-18]
 ```
 ### Laptop GPG Key
 ```
----------------------------------------------
 sec   4096R/0A4125873DD92F64 2022-01-19
 uid                          Eboubaker Bekkouche (My Laptop GPG Key) <eboubakkar@gmail.com>
 ssb   4096R/94E12541DEA8E355 2022-01-19
