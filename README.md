@@ -36,8 +36,10 @@ gpg --armor --export XXXXXXXXXX
 
 
 # Force git to use GPG
+git config --global gpg.program "/path/to/gpg"
+git config --global user.signingkey XXXXXXXXXXX
 git config --global commit.gpgsign true
-
+git config --global commit.gpgSign true
 
 ## Export all public keys
 gpg -a --export >mypubkeys.asc
