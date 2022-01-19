@@ -14,3 +14,16 @@ sec   rsa4096/EA7015980A99803E 2022-01-19 [SC] [expires: 2023-01-19]
 uid                 [ultimate] Eboubaker Bekkouche (My VPS GPG key) <eboubakkar@gmail.com>
 ssb   rsa4096/834ACEF983DEE193 2022-01-19 [E] [expires: 2023-01-19]
 ```
+
+
+# Footer
+```
+gpg --full-generate-key
+gpg --list-secret-keys --keyid-format=long
+gpg --armor --export 3AA5C34371567BD2
+
+## Export all public keys
+gpg -a --export >mypubkeys.asc
+## Export all encrypted private keys (which will also include corresponding public keys)
+gpg -a --export-secret-keys >myprivatekeys.asc
+```
