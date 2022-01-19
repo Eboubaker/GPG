@@ -30,6 +30,7 @@ ssb   rsa4096/A471F373C23F4DD6 2022-01-19 [E] [expires: 2022-07-18]
 
 
 # Footer
+some used commands
 ```
 gpg --full-generate-key
 gpg --list-secret-keys --keyid-format=long
