@@ -1,6 +1,6 @@
 # GPG
 My GPG Keys Index
-# Keys
+# GPG Keys
 ## GitHub
 #### My VPS GPG key
 ```
