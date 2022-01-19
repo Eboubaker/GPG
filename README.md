@@ -20,7 +20,7 @@ ssb   rsa4096/834ACEF983DEE193 2022-01-19 [E] [expires: 2023-01-19]
 ```
 gpg --full-generate-key
 gpg --list-secret-keys --keyid-format=long
-gpg --armor --export 3AA5C34371567BD2
+gpg --armor --export XXXXXXXXXX
 
 ## Export all public keys
 gpg -a --export >mypubkeys.asc
