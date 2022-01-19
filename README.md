@@ -34,10 +34,16 @@ gpg --full-generate-key
 gpg --list-secret-keys --keyid-format=long
 gpg --armor --export XXXXXXXXXX
 
+
+# Force git to use GPG
+git config --global commit.gpgsign true
+
+
 ## Export all public keys
 gpg -a --export >mypubkeys.asc
 ## Export all encrypted private keys (which will also include corresponding public keys)
 gpg -a --export-secret-keys >myprivatekeys.asc
+
 
 #delete GPG key
 gpg --delete-secret-keys XXXXXXXXXXXXXXXXX
