@@ -1,13 +1,11 @@
 # GPG
 My GPG Keys Index
-# GPG Keys
-## GitHub
-Keys for github signing.
-
 ## Personal GPG Key
 encrypt stuff or check signature with this key.
 ```
-# import directly from keyserver
+# import directly from github
+curl https://github.com/Eboubaker.gpg | gpg --import
+# import from keyserver
 gpg --keyserver keyserver.ubuntu.com --recv-key 967057A0
 ```
 ```
