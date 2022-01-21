@@ -1,4 +1,4 @@
-# PGP
+# GPG
 My PGP Keys Index
 ## Personal PGP Key
 Import this key.
