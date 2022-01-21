@@ -1,14 +1,18 @@
-# GPG
-My GPG Keys Index
-## Personal GPG Key
-encrypt stuff or check signature with this key.
+# PGP
+My PGP Keys Index
+## Personal PGP Key
+Import this key.
 ```
-# import directly from github
-curl https://github.com/Eboubaker.gpg | gpg --import
-# import from keyserver
+# option 1: import from keyserver
 gpg --keyserver keyserver.ubuntu.com --recv-key 967057A0
+
+# option 2: import directly from github
+curl https://github.com/Eboubaker.gpg | gpg --import
+
+# option 3: import from this repository
+curl https://raw.githubusercontent.com/Eboubaker/GPG/8a94f257a87b85435ddce8adef246d1cc4849729/personal.gpg | gpg --import
 ```
-As Text
+or import manually as text.
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: GnuPG v2
@@ -62,7 +66,19 @@ I0BEa3As1NBzQg8G9HPNxjEnL9g9q2hXe/6J0wX4hvBmLmRpeCFH/vaEuVJkzRft
 EiSnqqdqTajlkH57Pansd4Gv6RWKmpMn5UTG93A=
 =t4hn
 -----END PGP PUBLIC KEY BLOCK-----
+```
 
+key fingerprint
+```
+sub  rsa4096/02ED0666DD6248A1 2022-01-20 Eboubaker Bekkouche (Personal PGP Key) <eboubakkar@gmail.com>
+ Primary key fingerprint: 327B 92E6 8B47 6C52 489D  1FDE 0A30 8162 9670 57A0
+      Subkey fingerprint: 4DFA D1BA B065 B80F BF3E  29BC 02ED 0666 DD62 48A1
+```
+
+Encrypt something after importing the public key.<br>
+gpg will complain about the assurance of the key, you can check if the above fingerprints match and trust the key.
+```
+gpg --recipient eboubakkar@gmail.com --output secret_message.gpg --encrypt mydocument.txt
 ```
 # Footer
 some used commands
