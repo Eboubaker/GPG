@@ -80,31 +80,3 @@ gpg will complain about the assurance of the key, you can check if the above fin
 ```
 gpg --recipient eboubakkar@gmail.com --output secret_message.gpg --encrypt mydocument.txt
 ```
-# Footer
-some used commands
-```
-gpg --full-generate-key
-gpg --list-secret-keys --keyid-format=long
-gpg --armor --export XXXXXXXXXX
-
-
-# Force git to use GPG
-git config --global gpg.program "/path/to/gpg"
-git config --global user.signingkey XXXXXXXXXXX
-git config --global commit.gpgsign true
-git config --global commit.gpgSign true
-git config --global user.email "eboubakkar@gmail.com"
-git config --global user.name "Eboubaker Bekkouche"
-
-
-## Export all public keys
-gpg -a --export >mypubkeys.asc
-## Export all encrypted private keys (which will also include corresponding public keys)
-gpg -a --export-secret-keys >myprivatekeys.asc
-
-
-#delete GPG key
-gpg --delete-secret-keys XXXXXXXXXXXXXXXXX
-gpg --delete-key XXXXXXXXXXXXXX
-
-```
