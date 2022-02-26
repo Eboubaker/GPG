@@ -67,7 +67,7 @@ EiSnqqdqTajlkH57Pansd4Gv6RWKmpMn5UTG93A=
 =t4hn
 -----END PGP PUBLIC KEY BLOCK-----
 ```
-
+gpg will complain about the assurance of the key, you can check if the above fingerprints match and trust the key.
 key fingerprint
 ```
 sub  rsa4096/02ED0666DD6248A1 2022-01-20 Eboubaker Bekkouche (Personal PGP Key) <eboubakkar@gmail.com>
@@ -76,7 +76,6 @@ sub  rsa4096/02ED0666DD6248A1 2022-01-20 Eboubaker Bekkouche (Personal PGP Key) 
 ```
 
 Encrypt something after importing the public key.<br>
-gpg will complain about the assurance of the key, you can check if the above fingerprints match and trust the key.
 ```
 gpg --recipient eboubakkar@gmail.com --output secret_message.gpg --encrypt mydocument.txt
 ```
