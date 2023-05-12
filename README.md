@@ -77,5 +77,5 @@ sub  rsa4096/02ED0666DD6248A1 2022-01-20 Eboubaker Bekkouche (Personal PGP Key) 
 
 Encrypt something after importing the public key.<br>
 ```
-gpg --recipient eboubakkar@gmail.com --output secret_message.gpg --encrypt mydocument.txt
+gpg --recipient eboubakkar@gmail.com --output secret_message.gpg --encrypt sensetive_message.txt
 ```
